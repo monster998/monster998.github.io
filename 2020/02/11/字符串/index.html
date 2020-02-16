@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>数据类型 | Chen&#39;blog</title>
+  <title>字符串 | Chen&#39;blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java具有8种基本数据类型，其中有4种整型（int,short,long,byte），2种浮点型(float,double)，1种用于表示Uincode编码的字符单元的字符类型(char)和一种用于表示真值的boolean类型。">
+  <meta name="description" content="从概念上讲，Java字符串就是Unicode字符序列。Java没有内置的字符串类型，而是在标准Java类库中提供了一个预定义类，很自然的叫做String。每个用双引号括起来的字符串都是String类的一个实例： 12String e &#x3D; &quot;&quot;;&#x2F;&#x2F;一个空的字符串String greeting &#x3D; &quot;Hello&quot;;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据类型">
-<meta property="og:url" content="http://yoursite.com/2020/02/09/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
+<meta property="og:title" content="字符串">
+<meta property="og:url" content="http://yoursite.com/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html">
 <meta property="og:site_name" content="Chen&#39;blog">
-<meta property="og:description" content="Java具有8种基本数据类型，其中有4种整型（int,short,long,byte），2种浮点型(float,double)，1种用于表示Uincode编码的字符单元的字符类型(char)和一种用于表示真值的boolean类型。">
+<meta property="og:description" content="从概念上讲，Java字符串就是Unicode字符序列。Java没有内置的字符串类型，而是在标准Java类库中提供了一个预定义类，很自然的叫做String。每个用双引号括起来的字符串都是String类的一个实例： 12String e &#x3D; &quot;&quot;;&#x2F;&#x2F;一个空的字符串String greeting &#x3D; &quot;Hello&quot;;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-09T06:10:01.000Z">
-<meta property="article:modified_time" content="2020-02-10T08:24:46.268Z">
+<meta property="article:published_time" content="2020-02-11T02:48:02.000Z">
+<meta property="article:modified_time" content="2020-02-16T02:24:00.735Z">
 <meta property="article:author" content="Chen">
 <meta name="twitter:card" content="summary">
   
@@ -138,108 +138,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-数据类型" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-字符串" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      数据类型
+      字符串
     </h1>
   
 
         
-        <a href="/2020/02/09/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T06:10:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
+        <a href="/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="archive-article-date">
+  	<time datetime="2020-02-11T02:48:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Java具有8种基本数据类型，其中有4种<strong>整型</strong>（int,short,long,byte），2种<strong>浮点型</strong>(float,double)，1种用于表示Uincode编码的字符单元的<strong>字符类型</strong>(char)和一种用于表示真值的<strong>boolean类型</strong>。</p>
+        <p>从概念上讲，Java字符串就是Unicode字符序列。Java没有内置的字符串类型，而是在标准Java类库中提供了一个预定义类，很自然的叫做String。每个用双引号括起来的字符串都是String类的一个实例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String e = <span class="string">""</span>;<span class="comment">//一个空的字符串</span></span><br><span class="line">String greeting = <span class="string">"Hello"</span>;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
+<h3 id="子串"><a href="#子串" class="headerlink" title="子串"></a>子串</h3><p>String类的substring方法额可以从一个较大的字符串中提取出一个子串。例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String greeting = <span class="string">"Hello"</span>;</span><br><span class="line">String s = greeting.substring(<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//创建了一个由字符“Hel”组成的字符串</span></span><br></pre></td></tr></table></figure>
+<p>substring方法的第二个参数是<strong>不想复制</strong>的第一个位置。这里要复制的位置为0、1和2的字符。<br>substring的工作方式有一个优点：容易计算子串的长度。字符串s.substring(a,b)的长度为b-a。</p>
+<h3 id="拼接"><a href="#拼接" class="headerlink" title="拼接"></a>拼接</h3><p>与绝大多数的程序设计语言一样，Java语言允许使用+号拼接两个字符串。这种特性通常用在输出语句中。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"The answer is "</span>+answer);</span><br><span class="line"><span class="comment">//因为单词is后面加了一个空格，输出时也会加上这个空格</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>注意，单词之间没有空格，+号按照给定的次序将两个字符串拼接起来。</li>
+<li>当将一个字符串与一个非字符串的值进行拼接时，后者被转换成字符串（任何一个Java对象都可以转换成字符串）。</li>
+</ul>
+<p>如果需要把多个字符串放在一起，用一个定界符分隔，可以使用静态join方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String all = String.join(<span class="string">"/"</span>,<span class="string">"S"</span>,<span class="string">"M"</span>,<span class="string">"L"</span>,<span class="string">"XL"</span>);</span><br><span class="line"><span class="comment">//all就是字符串“S/M/L/XL”</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="Java整型"><a href="#Java整型" class="headerlink" title="Java整型"></a>Java整型</h4><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>存储需求</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int</td>
-<td>4字节</td>
-<td>-2,147,483,648（-2^31）~  2,147,483,647（2^31 - 1）[正好超过二十亿]</td>
-</tr>
-<tr>
-<td>short</td>
-<td>2字节</td>
-<td>-32768（-2^15）~32767 (2^15-1)</td>
-</tr>
-<tr>
-<td>long</td>
-<td>8字节</td>
-<td>-9,223,372,036,854,775,808（-2^63）~9,223,372,036,854,775,807 （2^63 -1）</td>
-</tr>
-<tr>
-<td>byte</td>
-<td>1字节</td>
-<td>-128（-2^7）~127 (2^7-1)</td>
-</tr>
-</tbody></table>
-<p>在通常情况下，int类型最常用，但如果表示星球上的居住人数，就需要使用long类型乐。byte和short类型主要用于特定的应用场合，例如，底层的文件处理或者需要控制占用存储空间量的大数组。</p>
-<h4 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h4><p>浮点类型用于表示有小数部分的数值。在Java中有两种浮点类型。</p>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>存储需求</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>float</td>
-<td>4字节</td>
-<td>大约是+-3.40282347E+38F(有效位数为6~7位)</td>
-</tr>
-<tr>
-<td>double</td>
-<td>8字节</td>
-<td>大约是+-1.79769313486231570E+308(有效位数为15位)</td>
-</tr>
-</tbody></table>
-<p>double表示这种类型的数值精度是float类型的两倍。绝大部分应用程序都是采用double类型。在很多情况下，float类型的精度很难满足需求。实际上，只有很少的情况适合使用float类型，例如，需要单精度数据的库，或者需要存储大量数据。</p>
-<h5 id="特殊浮点数值"><a href="#特殊浮点数值" class="headerlink" title="特殊浮点数值"></a>特殊浮点数值</h5><p>下面是用于表示溢出和出错情况的三个特殊的浮点数值：</p>
+<h3 id="不可变字符串"><a href="#不可变字符串" class="headerlink" title="不可变字符串"></a>不可变字符串</h3><p>String类没有提供用于修改字符串的方法，如果希望修改字符串内容的话，可以首先提取需要的字符，然后在拼接上替换的字符串：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String greeting = <span class="string">"Hello"</span>;</span><br><span class="line">greeting = greeting.substring(<span class="number">0</span>,<span class="number">3</span>) + <span class="string">"p!"</span>;<span class="comment">//将Hello修改为Help！</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>正无穷大</li>
-<li>负无穷大</li>
-<li>NaN（不是一个数字）<br>例如，一个正整数除以0的结果为正无穷大。计算0/0或者负数的平方根结果为NaN。</li>
+<li>由于不能修改Java字符串中的字符，所以在Java文档中将String类对象成为不可变字符串。</li>
 </ul>
-<h4 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a>char类型</h4><p>在Java中，char类型描述了UTF-16编码中的一个代码单元。<br>我们强烈建议不要在程序中使用char类型，除非确实需要处理UTF-16代码单元。最好将字符串作为抽象数据类型处理。</p>
-<h4 id="Boolean类型"><a href="#Boolean类型" class="headerlink" title="Boolean类型"></a>Boolean类型</h4><p>boolean类型有两个值：false和true，用来判定逻辑条件。整型值和布尔值之间不能进行相互转换。</p>
+<p>如同数字3永远是数字3一样，字符串“Hello”永远包含字符H、e、l、l、o的代码单元序列，而不能修改其中的任何一个字符。<br>但是，可以修改字符串变量greeting，让它引用另外一个字符串，这就如同可以将存放3的数值变量改为存放4的一样。</p>
 <ul>
-<li><p>在C++中，数值甚至指针可以代替boolean值。值0相当于布尔值false，非0值像防御布尔值true。在java中不是这样。<br>9</p>
-<h3 id="数据类型之间的转换"><a href="#数据类型之间的转换" class="headerlink" title="数据类型之间的转换"></a>数据类型之间的转换</h3></li>
-<li><p>如果两个操作数中有一个是double类型，另一个操作数就会转换为double类型</p>
-</li>
-<li><p>否则，如果其中一个操作数是float类型，另一个操作数将会转换为float类型</p>
-</li>
-<li><p>否则，如果其中一个操作数是long类型，另一个操作数将会转换为long类型</p>
-</li>
-<li><p>否则，两个操作数都将被转换为int类型</p>
-</li>
+<li>不可变字符串的优点：编译器可以让字符串共享。</li>
 </ul>
-<h4 id="强制类型转换（cast）"><a href="#强制类型转换（cast）" class="headerlink" title="强制类型转换（cast）"></a>强制类型转换（cast）</h4><p>在必要的时候，int类型的值将会自动地转换为double类型。但另一方面，有时也需要将double转换成int。<br>在Java中，允许进行这种数值之间的类型转换。当然，有可能会丢失一些信息。<br>强制类型转换的语法格式是在圆括号中给出想要转换的目标类型，后面紧跟待转换的变量名。例如：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> x = <span class="number">9.997</span>;</span><br><span class="line"><span class="keyword">int</span> nx = (<span class="keyword">int</span>)x;</span><br></pre></td></tr></table></figure>
-<p>这样，变量nx 的值为9。<strong>强制类型转换通过截断小数部分将浮点数转换为整型。</strong><br>如果想对浮点数进行舍入运算，以便得到<em>最接近的整数</em>（在很多情况下，这种操作更有用），那就需要使用Math.round方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> x = <span class="number">9.997</span>;</span><br><span class="line"><span class="keyword">int</span> nx = (<span class="keyword">int</span>)Math.round(x);</span><br></pre></td></tr></table></figure>
-<p>现在，变量nx的值为10。当调用round的时候，仍然需要使用强制类型转换。其原因是round方法返回的结果为long类型，由于存在信息丢失的可能性，所以只有使用显示的强制类型转换才能够将long类型转换为int类型。</p>
+<h3 id="检测字符串是否相等"><a href="#检测字符串是否相等" class="headerlink" title="检测字符串是否相等"></a>检测字符串是否相等</h3><p>可以使用equals方法检测两个字符串是否相等。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.equals(t)</span><br></pre></td></tr></table></figure>
+<p>如果字符串s与字符串t相等，则返回true；否则，返回false。</p>
 <ul>
-<li>如果试图将一个数值从一种类型强制转换为另一种类型，而又超出了目标类型的表示范围，结果就会截断成一个完全不同的值。例如，（byte）300的实际值为44。</li>
-<li>不要在boolean类型与任何数值类型之间进行强制类型转换，这样可以防止发生错误。只有极少数的情况才需要将布尔类型转换为数值类型，这时可以使用条件表达式b?1:0。</li>
+<li>s与t可以是字符串变量，也可以是字符串字面量。例如，下列表达式是合法的：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Hello"</span>.equals(greeting)</span><br></pre></td></tr></table></figure></li>
+<li>要想检测两个字符串是否相等，而不区分大小写，可以使用equalsIgnoreCase方法。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Hello"</span>.equalsIgnoreCase(<span class="string">"hello"</span>)</span><br></pre></td></tr></table></figure></li>
+<li>一定不要使用 == 运算符检测两个字符串是否相等！这个运算符只能够确定两个字符串是否放置在同一个位置上，当然，如果字符串放置在同一个位置上，它们必然相等。但是，完全有可能将内容相同的多个字符串的拷贝位置放在不同的位置上。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String greeting =  <span class="string">"Hello"</span>;</span><br><span class="line"><span class="keyword">if</span>(greeting == <span class="string">"Hello"</span>)</span><br><span class="line">    <span class="comment">//判定是true</span></span><br><span class="line"><span class="keyword">if</span>(greeting.substring(<span class="number">0</span>,<span class="number">3</span>) == <span class="string">"Hel"</span>)</span><br><span class="line">    <span class="comment">//判定是false</span></span><br></pre></td></tr></table></figure>
+实际上只有字符串常量是共享的，而+或substring等操作产生的结果并不是共享的。因此，千万不要使用==运算符测试字符串的相等性，以免在程序中出现糟糕的bug。</li>
+</ul>
+<h3 id="空串与Null串"><a href="#空串与Null串" class="headerlink" title="空串与Null串"></a>空串与Null串</h3><ul>
+<li>空串是长度为0的字符串。空串是一个Java对象，有自己的串长度（0）和内容（空）。可以调用以下代码检查一个字符串是否为空：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(str.length() == <span class="number">0</span>)</span><br><span class="line"><span class="comment">//或者</span></span><br><span class="line"><span class="keyword">if</span>(str.equals(<span class="string">""</span>))</span><br></pre></td></tr></table></figure></li>
+<li>String变量还可以存放一个特殊的值，名为null，这表示目前没有任何对象与改变量关联。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(str == <span class="keyword">null</span>)</span><br></pre></td></tr></table></figure></li>
+<li>有时要检查一个字符串既不是null也不为空串：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(str != <span class="keyword">null</span> &amp;&amp; str.length() != <span class="number">0</span>)</span><br></pre></td></tr></table></figure></li>
+<li>首先要检查str不为null*。因为如果在一个null值上调用方法，会出现错误。</li>
 </ul>
 
       
@@ -262,18 +218,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          字符串
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/01/02/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">常用命令提示符</div>
+    <a href="/2020/02/09/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据类型</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -300,7 +247,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Java整型"><span class="toc-number">1.</span> <span class="toc-text">Java整型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浮点类型"><span class="toc-number">2.</span> <span class="toc-text">浮点类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#特殊浮点数值"><span class="toc-number">2.1.</span> <span class="toc-text">特殊浮点数值</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#char类型"><span class="toc-number">3.</span> <span class="toc-text">char类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Boolean类型"><span class="toc-number">4.</span> <span class="toc-text">Boolean类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型之间的转换"><span class="toc-number"></span> <span class="toc-text">数据类型之间的转换</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#强制类型转换（cast）"><span class="toc-number">1.</span> <span class="toc-text">强制类型转换（cast）</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#子串"><span class="toc-number">1.</span> <span class="toc-text">子串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拼接"><span class="toc-number">2.</span> <span class="toc-text">拼接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不可变字符串"><span class="toc-number">3.</span> <span class="toc-text">不可变字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#检测字符串是否相等"><span class="toc-number">4.</span> <span class="toc-text">检测字符串是否相等</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#空串与Null串"><span class="toc-number">5.</span> <span class="toc-text">空串与Null串</span></a></li></ol>
                     </div>
                 </span>
             </div>
