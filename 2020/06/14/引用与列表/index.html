@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Chen&#39;blog</title>
+  <title>引用与列表 | Chen&#39;blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Chen&#39;blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="规划页面 开始输入内容之前要规划好Web页面的结构。首先画出一个草图，然后创建一个略图，最后再写出HTML。 规划页面时，首先设计大的块元素，然后用内联元素完善。 记住，要尽可能使用元素来告诉浏览器你的内容的含义。 一定要使用与内容含义最接近的元素。例如，如果需要一个列表，就不要使用段落元素。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="引用与列表">
+<meta property="og:url" content="http://yoursite.com/2020/06/14/%E5%BC%95%E7%94%A8%E4%B8%8E%E5%88%97%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Chen&#39;blog">
+<meta property="og:description" content="规划页面 开始输入内容之前要规划好Web页面的结构。首先画出一个草图，然后创建一个略图，最后再写出HTML。 规划页面时，首先设计大的块元素，然后用内联元素完善。 记住，要尽可能使用元素来告诉浏览器你的内容的含义。 一定要使用与内容含义最接近的元素。例如，如果需要一个列表，就不要使用段落元素。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-14T09:53:41.000Z">
+<meta property="article:modified_time" content="2020-06-14T10:05:11.268Z">
 <meta property="article:author" content="Chen">
 <meta name="twitter:card" content="summary">
   
@@ -134,211 +138,119 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-引用与列表" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      引用与列表
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/14/%E5%BC%95%E7%94%A8%E4%B8%8E%E5%88%97%E8%A1%A8/" class="archive-article-date">
+
+        
+        <a href="/2020/06/14/%E5%BC%95%E7%94%A8%E4%B8%8E%E5%88%97%E8%A1%A8/" class="archive-article-date">
   	<time datetime="2020-06-14T09:53:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-14</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/14/%E5%BC%95%E7%94%A8%E4%B8%8E%E5%88%97%E8%A1%A8/">引用与列表</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="规划页面"><a href="#规划页面" class="headerlink" title="规划页面"></a>规划页面</h4><ul>
+<li>开始输入内容之前要规划好Web页面的结构。首先画出一个草图，然后创建一个略图，最后再写出HTML。</li>
+<li>规划页面时，首先设计大的块元素，然后用内联元素完善。</li>
+<li>记住，要尽可能使用元素来告诉浏览器你的内容的含义。</li>
+<li>一定要使用与内容含义最接近的元素。例如，如果需要一个列表，就不要使用段落元素。<a id="more"></a>
+<h4 id="块元素和内联元素"><a href="#块元素和内联元素" class="headerlink" title="块元素和内联元素"></a>块元素和内联元素</h4></li>
+<li>p,blockquote,ol,li,ul都是块元素。它们单独显示，在内容前后分别有一个换行（默认的）。</li>
+<li>q和em是内联元素，这些元素中的内容与其包含元素的其余内容放在一起。</li>
+<li>需要插入你自己的换行时，可以使用br元素</li>
+</ul>
+<h4 id="空元素"><a href="#空元素" class="headerlink" title="空元素"></a>空元素</h4><ul>
+<li>br是一个“void”元素</li>
+<li>void元素没有内容</li>
+<li>void元素只有一个标记组成</li>
+<li>“空”元素没有内容，不过它有开始和结束标记</li>
+</ul>
+<h4 id="嵌套和列表"><a href="#嵌套和列表" class="headerlink" title="嵌套和列表"></a>嵌套和列表</h4><ul>
+<li>嵌套元素是指完全包含在另一个元素中的元素，如果元素能正确的嵌套，所有标记都能正确匹配</li>
+<li>要结合两个元素建立一个HTML列表：使用ol和li建立有序列表，使用ul和li可以建立一个无序列表</li>
+<li>浏览器显示一个有序列表时，它会为列表创建序号，所以无需你费心</li>
+<li>可以在列表中建立嵌套列表，将ol或ul元素放在li元素中</li>
+<li>要对HTML内容中的特殊字符使用字符实体（&amp;xxx）</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/14/%E8%B6%85%E6%96%87%E6%9C%AC%E9%93%BE%E6%8E%A5/" class="archive-article-date">
-  	<time datetime="2020-06-14T03:53:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/06/14/%E8%B6%85%E6%96%87%E6%9C%AC%E9%93%BE%E6%8E%A5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">超文本链接</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/14/%E8%B6%85%E6%96%87%E6%9C%AC%E9%93%BE%E6%8E%A5/">超文本链接</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#规划页面"><span class="toc-number">1.</span> <span class="toc-text">规划页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#块元素和内联元素"><span class="toc-number">2.</span> <span class="toc-text">块元素和内联元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#空元素"><span class="toc-number">3.</span> <span class="toc-text">空元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#嵌套和列表"><span class="toc-number">4.</span> <span class="toc-text">嵌套和列表</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/12/%E8%AE%A4%E8%AF%86web/" class="archive-article-date">
-  	<time datetime="2020-06-12T10:08:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-12</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/12/%E8%AE%A4%E8%AF%86web/">认识web</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="archive-article-date">
-  	<time datetime="2020-02-11T02:48:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/09/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T06:10:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/09/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/02/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/" class="archive-article-date">
-  	<time datetime="2020-01-02T13:16:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/02/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/">常用命令提示符</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/01/text/" class="archive-article-date">
-  	<time datetime="2020-01-01T11:43:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/01/text/">text</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -361,8 +273,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
