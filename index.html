@@ -156,7 +156,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h4><h4 id="用font-family属性定制页面中使用的字体"><a href="#用font-family属性定制页面中使用的字体" class="headerlink" title="用font-family属性定制页面中使用的字体"></a>用font-family属性定制页面中使用的字体</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-famliy</span>: Verdana,Geneva,Arial,sans-serif;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*如果不可用会使用下一个字体，如果所有的字体都没有找到，就使用浏览器默认的sans-serif字体</span></span><br><span class="line"><span class="comment">通常，你指定的font-family包含一个候选字体列表（Verdana,Geneva,Arial,sans-serif），它们都来自同一个字体系列</span></span><br><span class="line"><span class="comment">最后总是放一个通用的字体系列名（5种）*/</span></span><br></pre></td></tr></table></figure>
+        <h4 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体"></a>设置字体</h4><h4 id="用font-family属性定制页面中使用的字体"><a href="#用font-family属性定制页面中使用的字体" class="headerlink" title="用font-family属性定制页面中使用的字体"></a>用font-family属性定制页面中使用的字体</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-famliy</span>: Verdana,Geneva,Arial,sans-serif;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*如果不可用会使用下一个字体，如果所有的字体都没有找到，就使用浏览器默认的sans-serif字体</span></span><br><span class="line"><span class="comment">通常，你指定的font-family包含一个候选字体列表（Verdana,Geneva,Arial,sans-serif），它们都来自同一个字体系列</span></span><br><span class="line"><span class="comment">最后总是放一个通用的字体系列名（5种）*/</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>每个font-family包含一组有共同特征的字体。共有5个字体系列：sans-serif，serif，monospace，cursive和fantasy。每个字体系列都包括大量字体</li>
 <li>san-serif字体系列包括没有衬线的字体，与serif字体相比，<strong>通常认为san-serif字体在计算机屏幕上更容易识读</strong>（san-serif表示“没有衬线”）</li>
@@ -168,16 +168,39 @@
 <h4 id="Web字体"><a href="#Web字体" class="headerlink" title="Web字体"></a>Web字体</h4><p>首先要找到一个字体（Emblema One），把你的字体文件放在Web上，这样用户的浏览器就能访问这些字体</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*在css中增加@font-face属性*/</span></span><br><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-famliy</span>: <span class="string">"Emblema One"</span>;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">"http://wicklysmart.com/hfhthtmlcss/chapter8/journal/EmblemaOne-Regular.woff"</span>),</span><br><span class="line">    <span class="built_in">url</span>(<span class="string">"http://wicklysmart.com/hfhthtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*在css中使用font-famliy名*/</span></span><br><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">font-famliy</span>: <span class="string">"Emblema One"</span>,san-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="用font-size属性控制字体大小"><a href="#用font-size属性控制字体大小" class="headerlink" title="用font-size属性控制字体大小"></a>用font-size属性控制字体大小</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="用font-size属性控制字体大小"><a href="#用font-size属性控制字体大小" class="headerlink" title="用font-size属性控制字体大小"></a>用font-size属性控制字体大小</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*可以按照像素指定字体大小，会明确指出字体具体有多大*/</span></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*用百分数指定字体大小时，会相对于另一个字体指出这个字体有多大。</span></span><br><span class="line"><span class="comment">由于font-size是从父元素继承的一个属性，指定一个百分数字体大小时，就是相对父元素的字体大小。*/</span></span><br><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="comment">/*这里把一级标题的大小指定为150%*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">150%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*还可以使用em指定字体大小，类似于百分数，这也是一个相对度量单位</span></span><br><span class="line"><span class="comment">使用em时，不是指定一个百分数，而是要指定一个比例因子*/</span></span><br><span class="line"><span class="selector-tag">h2</span>&#123;</span><br><span class="line">    <span class="comment">/*h2标题的大小将是父元素的1.2倍*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.2em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*还有一种指定字体大小的方式：关键字</span></span><br><span class="line"><span class="comment">可以把一个字体大小指定为xx-small，x-small，small，medium，large，x-large或xx-large，浏览器会把这些关键字转换为像素值</span></span><br><span class="line"><span class="comment">每个关键字的大小比前一个大20%，small通常定义为12px*/</span></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="comment">/*大多数浏览器中，这会使文本大小约为12px*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: small;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>推荐如何指定字体大小：</p>
+<ol>
+<li>选择一个关键字（推荐small或medium），指定它作为body规则中的字体大小，这相当于页面的默认字体大小</li>
+<li>使用em或百分数，相对于body字体大小指定其他元素的字体大小</li>
+</ol>
+<ul>
+<li>使用相对字体大小可以让你的页面更可维护。</li>
+<li>如果使用像素指定文字大小，老版的IE将不支持文本缩放，这正是不建议按像素指定字体大小的一个原因</li>
+</ul>
+<h4 id="用color属性为文本设置颜色"><a href="#用color属性为文本设置颜色" class="headerlink" title="用color属性为文本设置颜色"></a>用color属性为文本设置颜色</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: silver;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>用color属性为文本设置颜色</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: silver;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>用font-weight属性影响字体的粗细</p>
+<h4 id="用font-weight属性影响字体的粗细"><a href="#用font-weight属性影响字体的粗细" class="headerlink" title="用font-weight属性影响字体的粗细"></a>用font-weight属性影响字体的粗细</h4><p>可以将元素中的font-weight属性设置为blod。来使用粗体文本</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>使用text-decoration属性为文本增加更多风格(包括上划线，下划线和删除线)</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    text-decoration：underline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相反的，如果一个元素默认的设置为blod，或者从父元素继承了粗体，可以如下去除粗体样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: normal;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>还有两个相对font-weight属性：bolder和lighter。</li>
+<li>使用这两个属性值时，会相对于继承的值使文本样式稍粗一些或稍细一些。<em>这些值很少使用，因为没有多少字体支持粗细程度的微小差别，实际上这两个值通常没有任何效果</em></li>
+<li>还可以把font-weight属性设置为100-900之间的一个数（100的倍数），不过同样的，这个特性也未必得到字体和浏览器的广泛支持，所以通常并不使用</li>
+</ul>
+<h4 id="使用text-decoration属性为文本增加更多风格-包括上划线，下划线和删除线"><a href="#使用text-decoration属性为文本增加更多风格-包括上划线，下划线和删除线" class="headerlink" title="使用text-decoration属性为文本增加更多风格(包括上划线，下划线和删除线)"></a>使用text-decoration属性为文本增加更多风格(包括上划线，下划线和删除线)</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*下划线*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：underline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*上划线*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：overline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*一个上划线和一个下划线*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：underline overline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*删除线（会使元素有一个从文本中间穿过的横线）*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：line-through;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*如果文本继承了你不想要的文本装饰，可以使用none值去除装饰*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>有下划线的文档通常会被用户误以为是链接文本，所以要谨慎使用这个属性</li>
+<li>斜体（ltalic）和倾斜（oblique）风格会使字体看起来是倾斜的</li>
+<li>除非可以控制用户使用的字体和浏览器，否则你会发现，不论你指定什么风格，结果并不确定，有时候你会得到斜体，有时则是倾斜文本</li>
+<li>所以完全可以就使用斜体，不用担心他们的差别（你可能根本无以控制）</li>
+</ul>
+<h4 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h4><ul>
+<li>Web颜色是混合不同数量的红、绿、蓝色得到的</li>
+<li>CSS有16个基本颜色，包括黑色、白色、绿色，以及150种扩展颜色</li>
+<li>可以使用红绿蓝百分数指定你想要的颜色，也可以使用红绿蓝数值（0~255）指定，或者使用颜色的十六进制码来指定颜色<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*以橙色为例*/</span></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">80%</span>，<span class="number">40%</span>，<span class="number">0%</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="comment">/*就是255的80%，40%和0%*/</span></span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">204</span>，<span class="number">102</span>，<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#cc6600</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
 
@@ -1178,15 +1201,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">协议</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">设置字体与颜色</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">java字符串</a>
+                <a href="javascript:void(0)" class="js-tag color3">协议</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1198,7 +1217,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">java数据类型</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">java字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1207,10 +1234,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">元素</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
               </li>
             
             <div class="clearfix"></div>
