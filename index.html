@@ -136,6 +136,78 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-盒模型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/24/%E7%9B%92%E6%A8%A1%E5%9E%8B/">盒模型</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/24/%E7%9B%92%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
+  	<time datetime="2020-06-24T08:58:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>CSS使用一个盒模型来控制元素如何显示。所有元素都被当作盒子：段落、标题、块引用、列表、列表项等。甚至内联元素在CSS看来也是盒子。盒子由内容区和可选的内边距、边框和外边距组成。</p>
+        
+          <a class="article-more-a" href="/2020/06/24/%E7%9B%92%E6%A8%A1%E5%9E%8B/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-字体与颜色样式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -163,45 +235,10 @@
 <li>serif字体系列包括有衬线的字体，<strong>很多人一看到这种字体就想到新闻报纸的文字排版</strong>。<em>衬线是字母末端的装饰性“小细线”</em></li>
 <li>monospace字体系列中的字体包含固定宽度的字符。例如一个i在水平方向所占的宽度与一个m所占的宽度是相同的。<strong>这些字体主要用于显示软件代码示例</strong></li>
 <li>cursive字体系列包括看似手写的字体。<strong>有时会看到标题中使用这些字体</strong></li>
-<li><strong>fantasy字体系列包含有某种风格的装饰性字体</strong></li>
-</ul>
-<h4 id="Web字体"><a href="#Web字体" class="headerlink" title="Web字体"></a>Web字体</h4><p>首先要找到一个字体（Emblema One），把你的字体文件放在Web上，这样用户的浏览器就能访问这些字体</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*在css中增加@font-face属性*/</span></span><br><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-famliy</span>: <span class="string">"Emblema One"</span>;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">"http://wicklysmart.com/hfhthtmlcss/chapter8/journal/EmblemaOne-Regular.woff"</span>),</span><br><span class="line">    <span class="built_in">url</span>(<span class="string">"http://wicklysmart.com/hfhthtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*在css中使用font-famliy名*/</span></span><br><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">font-famliy</span>: <span class="string">"Emblema One"</span>,san-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="用font-size属性控制字体大小"><a href="#用font-size属性控制字体大小" class="headerlink" title="用font-size属性控制字体大小"></a>用font-size属性控制字体大小</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*可以按照像素指定字体大小，会明确指出字体具体有多大*/</span></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*用百分数指定字体大小时，会相对于另一个字体指出这个字体有多大。</span></span><br><span class="line"><span class="comment">由于font-size是从父元素继承的一个属性，指定一个百分数字体大小时，就是相对父元素的字体大小。*/</span></span><br><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="comment">/*这里把一级标题的大小指定为150%*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">150%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*还可以使用em指定字体大小，类似于百分数，这也是一个相对度量单位</span></span><br><span class="line"><span class="comment">使用em时，不是指定一个百分数，而是要指定一个比例因子*/</span></span><br><span class="line"><span class="selector-tag">h2</span>&#123;</span><br><span class="line">    <span class="comment">/*h2标题的大小将是父元素的1.2倍*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.2em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*还有一种指定字体大小的方式：关键字</span></span><br><span class="line"><span class="comment">可以把一个字体大小指定为xx-small，x-small，small，medium，large，x-large或xx-large，浏览器会把这些关键字转换为像素值</span></span><br><span class="line"><span class="comment">每个关键字的大小比前一个大20%，small通常定义为12px*/</span></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="comment">/*大多数浏览器中，这会使文本大小约为12px*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: small;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>推荐如何指定字体大小：</p>
-<ol>
-<li>选择一个关键字（推荐small或medium），指定它作为body规则中的字体大小，这相当于页面的默认字体大小</li>
-<li>使用em或百分数，相对于body字体大小指定其他元素的字体大小</li>
-</ol>
-<ul>
-<li>使用相对字体大小可以让你的页面更可维护。</li>
-<li>如果使用像素指定文字大小，老版的IE将不支持文本缩放，这正是不建议按像素指定字体大小的一个原因</li>
-</ul>
-<h4 id="用color属性为文本设置颜色"><a href="#用color属性为文本设置颜色" class="headerlink" title="用color属性为文本设置颜色"></a>用color属性为文本设置颜色</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: silver;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="用font-weight属性影响字体的粗细"><a href="#用font-weight属性影响字体的粗细" class="headerlink" title="用font-weight属性影响字体的粗细"></a>用font-weight属性影响字体的粗细</h4><p>可以将元素中的font-weight属性设置为blod。来使用粗体文本</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相反的，如果一个元素默认的设置为blod，或者从父元素继承了粗体，可以如下去除粗体样式</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: normal;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>还有两个相对font-weight属性：bolder和lighter。</li>
-<li>使用这两个属性值时，会相对于继承的值使文本样式稍粗一些或稍细一些。<em>这些值很少使用，因为没有多少字体支持粗细程度的微小差别，实际上这两个值通常没有任何效果</em></li>
-<li>还可以把font-weight属性设置为100-900之间的一个数（100的倍数），不过同样的，这个特性也未必得到字体和浏览器的广泛支持，所以通常并不使用</li>
-</ul>
-<h4 id="使用text-decoration属性为文本增加更多风格-包括上划线，下划线和删除线"><a href="#使用text-decoration属性为文本增加更多风格-包括上划线，下划线和删除线" class="headerlink" title="使用text-decoration属性为文本增加更多风格(包括上划线，下划线和删除线)"></a>使用text-decoration属性为文本增加更多风格(包括上划线，下划线和删除线)</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*下划线*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：underline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*上划线*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：overline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*一个上划线和一个下划线*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：underline overline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*删除线（会使元素有一个从文本中间穿过的横线）*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：line-through;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*如果文本继承了你不想要的文本装饰，可以使用none值去除装饰*/</span></span><br><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    text-decoration：none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>有下划线的文档通常会被用户误以为是链接文本，所以要谨慎使用这个属性</li>
-<li>斜体（ltalic）和倾斜（oblique）风格会使字体看起来是倾斜的</li>
-<li>除非可以控制用户使用的字体和浏览器，否则你会发现，不论你指定什么风格，结果并不确定，有时候你会得到斜体，有时则是倾斜文本</li>
-<li>所以完全可以就使用斜体，不用担心他们的差别（你可能根本无以控制）</li>
-</ul>
-<h4 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h4><ul>
-<li>Web颜色是混合不同数量的红、绿、蓝色得到的</li>
-<li>CSS有16个基本颜色，包括黑色、白色、绿色，以及150种扩展颜色</li>
-<li>可以使用红绿蓝百分数指定你想要的颜色，也可以使用红绿蓝数值（0~255）指定，或者使用颜色的十六进制码来指定颜色<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*以橙色为例*/</span></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">80%</span>，<span class="number">40%</span>，<span class="number">0%</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="comment">/*就是255的80%，40%和0%*/</span></span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">204</span>，<span class="number">102</span>，<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#cc6600</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
+<li><strong>fantasy字体系列包含有某种风格的装饰性字体</strong></li></ul>
+        
+          <a class="article-more-a" href="/2020/06/24/%E5%AD%97%E4%BD%93%E4%B8%8E%E9%A2%9C%E8%89%B2%E6%A0%B7%E5%BC%8F/#more">more >></a>
+        
       
 
       
@@ -987,123 +1024,6 @@
 
 
   
-    <article id="post-常用命令提示符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/02/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/">常用命令提示符</a>
-    </h1>
-  
-
-        
-        <a href="/2020/01/02/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/" class="archive-article-date">
-  	<time datetime="2020-01-02T13:16:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <table>
-<thead>
-<tr>
-<th>命令</th>
-<th>操作</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>启动</td>
-<td>win+r，输入cmd回车</td>
-</tr>
-<tr>
-<td>切换盘符</td>
-<td>盘符名称：</td>
-</tr>
-<tr>
-<td>进入文件夹</td>
-<td>cd 文件夹名称</td>
-</tr>
-<tr>
-<td>进入多级文件夹</td>
-<td>cd 文件夹名称1\文件夹名称2\文件夹名称3</td>
-</tr>
-<tr>
-<td>返回上一级</td>
-<td>cd ..</td>
-</tr>
-<tr>
-<td>返回根路径</td>
-<td>cd \</td>
-</tr>
-<tr>
-<td>查看当前文件夹内容</td>
-<td>dir</td>
-</tr>
-<tr>
-<td>创建文件夹</td>
-<td>md 文件夹名称</td>
-</tr>
-<tr>
-<td>清屏</td>
-<td>cls</td>
-</tr>
-<tr>
-<td>退出</td>
-<td>exit</td>
-</tr>
-</tbody></table>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">cd</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1201,15 +1121,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">设置字体与颜色</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">协议</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">设置字体与颜色</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">cd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">java数据类型</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1218,10 +1142,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">java数据类型</a>
               </li>
              
               <li class="article-tag-list-item">
