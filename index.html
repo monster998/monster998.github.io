@@ -136,6 +136,93 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-布局与定位（流）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/29/%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D%EF%BC%88%E6%B5%81%EF%BC%89/">布局与定位（流）</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/29/%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D%EF%BC%88%E6%B5%81%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2020-06-29T01:21:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="流"><a href="#流" class="headerlink" title="流"></a>流</h4><p>浏览器使用流在页面中放置元素。流实际上就是浏览器在页面上摆放HTML元素所用到的方法。</p>
+<ul>
+<li>块元素从上向下流，各元素之间有一个换行。默认的，每个块元素会占浏览器窗口的整个宽度。</li>
+<li>内联元素在块元素内部从左上方流向右下方。如果需要多行，浏览器会换行，在垂直方向上扩展外围块元素，来包含这些内联元素。</li>
+<li>正常页面流中两个块元素上下相邻的外边距会折叠为最大外边距的大小，或者如果两个外边距大小相同，会折叠为一个外边距。（并排放置，会将外边距相加来计算他们之间的空间）</li></ul>
+        
+          <a class="article-more-a" href="/2020/06/29/%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D%EF%BC%88%E6%B5%81%EF%BC%89/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">浮动</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-div与span" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -166,23 +253,9 @@
 </li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#elixirs</span>&#123;</span><br><span class="line"></span><br><span class="line">    .....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h4 id="嵌套元素"><a href="#嵌套元素" class="headerlink" title="嵌套元素"></a>嵌套元素</h4><ul>
-<li>text-align是块元素的一个属性，用来将这个块元素中的所有内容对齐，可以居中，左对齐或右对齐。这个属性可以由所有嵌套的块元素继承。</li>
-<li>可以使用子孙选择器来选择嵌套在其他元素中的元素。例如：<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div h2&#123;...&#125;</span><br></pre></td></tr></table></figure>
-会选择嵌套在div元素中的所有h2（包括子元素，孙子元素等）</li>
-</ul>
-<h4 id="span元素"><a href="#span元素" class="headerlink" title="span元素"></a>span元素</h4><ul>
-<li>&lt; span &gt;内联元素与div元素类似；它用于将相关的内联元素和文本归组在一起</li>
-<li>类似于div，可以将span元素增加到类（或者为span元素指定唯一的id），对它们增加样式</li>
-</ul>
-<h4 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h4><ul>
-<li>有些元素有不同的状态，&lt; a &gt;元素就是这样一个例子。a元素的主要状态包括未访问、已访问和悬停</li>
-<li>可以用伪类单独地为各个状态指定样式。伪类最常用于a元素，：link对应未访问的链接。：visited对应已访问的链接。：：hover对应悬停状态</li>
-<li>伪类还可以用于其他元素，而不仅限于a<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#elixirs</span> <span class="selector-tag">a</span><span class="selector-pseudo">:link</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:...;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#elixirs</span> <span class="selector-tag">a</span><span class="selector-pseudo">:visited</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:...;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#elixirs</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2020/06/28/div%E4%B8%8Espan/#more">more >></a>
+        
       
 
       
@@ -974,90 +1047,6 @@
 
 
   
-    <article id="post-字符串" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
-    </h1>
-  
-
-        
-        <a href="/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="archive-article-date">
-  	<time datetime="2020-02-11T02:48:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>从概念上讲，Java字符串就是Unicode字符序列。Java没有内置的字符串类型，而是在标准Java类库中提供了一个预定义类，很自然的叫做String。每个用双引号括起来的字符串都是String类的一个实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String e = <span class="string">""</span>;<span class="comment">//一个空的字符串</span></span><br><span class="line">String greeting = <span class="string">"Hello"</span>;</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2020/02/11/%E5%AD%97%E7%AC%A6%E4%B8%B2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">java字符串</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1151,7 +1140,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">协议</a>
+                <a href="javascript:void(0)" class="js-tag color3">上传图片到博客</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1159,15 +1148,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">上传图片到博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">设置字体与颜色</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">java字符串</a>
+                <a href="javascript:void(0)" class="js-tag color3">浮动</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1175,11 +1160,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">缩略图</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">块元素和内联元素</a>
+                <a href="javascript:void(0)" class="js-tag color3">协议</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1187,15 +1168,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">块元素和内联元素</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">盒模型</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
+                <a href="javascript:void(0)" class="js-tag color4">缩略图</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">元素</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">java字符串</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
               </li>
             
             <div class="clearfix"></div>
