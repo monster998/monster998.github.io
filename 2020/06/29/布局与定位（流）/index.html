@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>布局与定位（流） | Chen&#39;blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="流浏览器使用流在页面中放置元素。流实际上就是浏览器在页面上摆放HTML元素所用到的方法。  块元素从上向下流，各元素之间有一个换行。默认的，每个块元素会占浏览器窗口的整个宽度。 内联元素在块元素内部从左上方流向右下方。如果需要多行，浏览器会换行，在垂直方向上扩展外围块元素，来包含这些内联元素。 正常页面流中两个块元素上下相邻的外边距会折叠为最大外边距的大小，或者如果两个外边距大小相同，会折叠为一个">
+  <meta name="description" content="在网页中，元素有三种布局模型： 流动模型（Flow） 流动是默认的网页布局模式   浮动模型（Float） 层模型（Layer） 层模型有三种模式：   绝对定位（position:absolute） 如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其">
 <meta property="og:type" content="article">
 <meta property="og:title" content="布局与定位（流）">
 <meta property="og:url" content="http://yoursite.com/2020/06/29/%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D%EF%BC%88%E6%B5%81%EF%BC%89/index.html">
 <meta property="og:site_name" content="Chen&#39;blog">
-<meta property="og:description" content="流浏览器使用流在页面中放置元素。流实际上就是浏览器在页面上摆放HTML元素所用到的方法。  块元素从上向下流，各元素之间有一个换行。默认的，每个块元素会占浏览器窗口的整个宽度。 内联元素在块元素内部从左上方流向右下方。如果需要多行，浏览器会换行，在垂直方向上扩展外围块元素，来包含这些内联元素。 正常页面流中两个块元素上下相邻的外边距会折叠为最大外边距的大小，或者如果两个外边距大小相同，会折叠为一个">
+<meta property="og:description" content="在网页中，元素有三种布局模型： 流动模型（Flow） 流动是默认的网页布局模式   浮动模型（Float） 层模型（Layer） 层模型有三种模式：   绝对定位（position:absolute） 如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-06-29T01:21:23.000Z">
-<meta property="article:modified_time" content="2020-07-06T08:53:17.438Z">
+<meta property="article:modified_time" content="2020-07-12T09:15:02.745Z">
 <meta property="article:author" content="Chen">
 <meta property="article:tag" content="浮动">
 <meta name="twitter:card" content="summary">
@@ -159,12 +159,43 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="流"><a href="#流" class="headerlink" title="流"></a>流</h4><p>浏览器使用流在页面中放置元素。流实际上就是浏览器在页面上摆放HTML元素所用到的方法。</p>
+        <ul>
+<li>在网页中，元素有三种布局模型：<ol>
+<li>流动模型（Flow）<ul>
+<li>流动是默认的网页布局模式</li>
+</ul>
+</li>
+<li>浮动模型（Float）</li>
+<li>层模型（Layer）<ul>
+<li>层模型有三种模式：</li>
+</ul>
+<ol>
+<li>绝对定位（position:absolute）<ul>
+<li>如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。</li>
+</ul>
+</li>
+<li>相对定位（position:relative）<ul>
+<li>相对定位完成的过程是首先按static(float)方式生成一个元素(并且元素像层一样浮动了起来)，然后相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。</li>
+</ul>
+</li>
+<li>固定定位（position:fixed）<ul>
+<li>与absolute定位类型类似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响，这与background-attachment:fixed;属性功能相同。<a id="more"></a>
+
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="流"><a href="#流" class="headerlink" title="流"></a>流</h4><p>浏览器使用流在页面中放置元素。流实际上就是浏览器在页面上摆放HTML元素所用到的方法。</p>
 <ul>
 <li>块元素从上向下流，各元素之间有一个换行。默认的，每个块元素会占浏览器窗口的整个宽度。</li>
 <li>内联元素在块元素内部从左上方流向右下方。如果需要多行，浏览器会换行，在垂直方向上扩展外围块元素，来包含这些内联元素。</li>
-<li>正常页面流中两个块元素上下相邻的外边距会折叠为最大外边距的大小，或者如果两个外边距大小相同，会折叠为一个外边距。（并排放置，会将外边距相加来计算他们之间的空间）<a id="more"></a>
-<h4 id="浮动元素"><a href="#浮动元素" class="headerlink" title="浮动元素"></a>浮动元素</h4></li>
+<li>正常页面流中两个块元素上下相邻的外边距会折叠为最大外边距的大小，或者如果两个外边距大小相同，会折叠为一个外边距。（并排放置，会将外边距相加来计算他们之间的空间）</li>
+</ul>
+<h4 id="浮动元素"><a href="#浮动元素" class="headerlink" title="浮动元素"></a>浮动元素</h4><ul>
 <li>浮动元素会从正常流中取出，浮动到左边或右边</li>
 <li>浮动元素放在块元素之上，不会影响正常的页面流。不过，内联元素会考虑浮动元素的边界，围绕着这个浮动元素</li>
 <li>clear属性用来指定一个块元素左边或右边（或者左右两边）不能有浮动元素。设置了clear属性的块元素会下移，直到它旁边没有块元素</li>

@@ -136,6 +136,108 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-选择器优先级" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/12/%E9%80%89%E6%8B%A9%E5%99%A8%E4%BC%98%E5%85%88%E7%BA%A7/">选择器优先级</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/12/%E9%80%89%E6%8B%A9%E5%99%A8%E4%BC%98%E5%85%88%E7%BA%A7/" class="archive-article-date">
+  	<time datetime="2020-07-12T09:31:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>样式表优先级：<ul>
+<li>内联样式表&gt;嵌入样式表&gt;外部样式表<h3 id="选择器类型"><a href="#选择器类型" class="headerlink" title="选择器类型"></a>选择器类型</h3></li>
+</ul>
+</li>
+<li>子选择器  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span>&gt;<span class="selector-tag">span</span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>仅选择它的直接后代（子元素的第一代后代）</li>
+</ul>
+</li>
+<li>后代选择器  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span> <span class="selector-tag">span</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>作用于所有子后代元素</li>
+<li>总结：&gt; 作用于第一代，空格作用于元素的所有后代</li>
+</ul>
+</li>
+<li>通用选择器 *<ul>
+<li>选择HTML中所有标签元素</li>
+</ul>
+</li>
+<li>伪类选择器：  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">    <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    ``` </span><br><span class="line">* 分组选择器</span><br><span class="line">    ```<span class="selector-tag">css</span></span><br><span class="line">    <span class="selector-tag">h1</span>,<span class="selector-tag">span</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    ```  </span><br><span class="line"></span><br><span class="line">#### 权值</span><br><span class="line">* 权值越大优先级越高，权值等于所有选择器权值相加</span><br><span class="line">    1. 标签权值为1</span><br><span class="line">    2. 类选择符权值为10</span><br><span class="line">    3. <span class="selector-tag">ID</span>选择器权值为100</span><br><span class="line">    4. 继承也有权值但很低，有些文献提出它只有0<span class="selector-class">.1</span></span><br><span class="line"></span><br><span class="line">#### 最高级选择器</span><br><span class="line">* ！<span class="selector-tag">improtant</span></span><br><span class="line">    * 权值高于用户自己设置的</span><br><span class="line">    ```<span class="selector-tag">css</span></span><br><span class="line">    <span class="selector-tag">p</span>&#123;</span><br><span class="line">        <span class="attribute">color</span>:red<span class="meta">!important</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">选择器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-第一章-计算机网络和因特网" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -745,11 +847,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="流"><a href="#流" class="headerlink" title="流"></a>流</h4><p>浏览器使用流在页面中放置元素。流实际上就是浏览器在页面上摆放HTML元素所用到的方法。</p>
-<ul>
-<li>块元素从上向下流，各元素之间有一个换行。默认的，每个块元素会占浏览器窗口的整个宽度。</li>
-<li>内联元素在块元素内部从左上方流向右下方。如果需要多行，浏览器会换行，在垂直方向上扩展外围块元素，来包含这些内联元素。</li>
-<li>正常页面流中两个块元素上下相邻的外边距会折叠为最大外边距的大小，或者如果两个外边距大小相同，会折叠为一个外边距。（并排放置，会将外边距相加来计算他们之间的空间）</li></ul>
+        <ul>
+<li>在网页中，元素有三种布局模型：<ol>
+<li>流动模型（Flow）<ul>
+<li>流动是默认的网页布局模式</li>
+</ul>
+</li>
+<li>浮动模型（Float）</li>
+<li>层模型（Layer）<ul>
+<li>层模型有三种模式：</li>
+</ul>
+<ol>
+<li>绝对定位（position:absolute）<ul>
+<li>如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。</li>
+</ul>
+</li>
+<li>相对定位（position:relative）<ul>
+<li>相对定位完成的过程是首先按static(float)方式生成一个元素(并且元素像层一样浮动了起来)，然后相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。</li>
+</ul>
+</li>
+<li>固定定位（position:fixed）<ul>
+<li>与absolute定位类型类似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响，这与background-attachment:fixed;属性功能相同。</li></ul></li></ol></li></ol></li></ul>
         
           <a class="article-more-a" href="/2020/06/29/%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D%EF%BC%88%E6%B5%81%EF%BC%89/#more">more >></a>
         
@@ -1031,95 +1149,6 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">设置字体与颜色</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-CSS入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/23/CSS%E5%85%A5%E9%97%A8/">CSS入门</a>
-    </h1>
-  
-
-        
-        <a href="/2020/06/23/CSS%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-06-23T03:06:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h4 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h4><ul>
-<li>CSS包含一些简单语句，称为规则</li>
-<li>每个规则为选择的一些HTML元素提供样式</li>
-<li>典型的规则包括一个选择器，以及一个或多个属性和值</li>
-</ul>
-</blockquote>
-        
-          <a class="article-more-a" href="/2020/06/23/CSS%E5%85%A5%E9%97%A8/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">选择器</a>
         		</li>
       		
 		</ul>
