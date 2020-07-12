@@ -157,31 +157,27 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ul>
-<li><p>样式表优先级：</p>
-<ul>
+<li>样式表优先级：<ul>
 <li>内联样式表&gt;嵌入样式表&gt;外部样式表<h3 id="选择器类型"><a href="#选择器类型" class="headerlink" title="选择器类型"></a>选择器类型</h3></li>
 </ul>
 </li>
-<li><p>子选择器</p>
-  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span>&gt;<span class="selector-tag">span</span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>子选择器  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span>&gt;<span class="selector-tag">span</span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>仅选择它的直接后代（子元素的第一代后代）</li>
 </ul>
 </li>
-<li><p>后代选择器</p>
-  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span> <span class="selector-tag">span</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>后代选择器  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span> <span class="selector-tag">span</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>作用于所有子后代元素</li>
 <li>总结：&gt; 作用于第一代，空格作用于元素的所有后代</li>
 </ul>
 </li>
-<li><p>通用选择器 *</p>
-<ul>
+<li>通用选择器 *<ul>
 <li>选择HTML中所有标签元素</li>
 </ul>
 </li>
-<li><p>伪类选择器：</p>
-  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">    <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    ``` </span><br><span class="line"></span><br><span class="line">* 分组选择器</span><br><span class="line">    ```<span class="selector-tag">css</span></span><br><span class="line">    <span class="selector-tag">h1</span>,<span class="selector-tag">span</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    ```  </span><br><span class="line"></span><br><span class="line">#### 权值</span><br><span class="line">* 权值越大优先级越高，权值等于所有选择器权值相加</span><br><span class="line">    1. 标签权值为1</span><br><span class="line">    2. 类选择符权值为10</span><br><span class="line">    3. <span class="selector-tag">ID</span>选择器权值为100</span><br><span class="line">    4. 继承也有权值但很低，有些文献提出它只有0<span class="selector-class">.1</span></span><br><span class="line"></span><br><span class="line">#### 最高级选择器</span><br><span class="line">* ！<span class="selector-tag">improtant</span></span><br><span class="line">    * 权值高于用户自己设置的</span><br><span class="line">    ```<span class="selector-tag">css</span></span><br><span class="line">    <span class="selector-tag">p</span>&#123;</span><br><span class="line">        <span class="attribute">color</span>:red<span class="meta">!important</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<li>伪类选择器：  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>分组选择器  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">    <span class="selector-tag">h1</span>,<span class="selector-tag">span</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    ```  </span><br><span class="line"></span><br><span class="line">#### 权值</span><br><span class="line">* 权值越大优先级越高，权值等于所有选择器权值相加</span><br><span class="line">    1. 标签权值为1</span><br><span class="line">    2. 类选择符权值为10</span><br><span class="line">    3. <span class="selector-tag">ID</span>选择器权值为100</span><br><span class="line">    4. 继承也有权值但很低，有些文献提出它只有0<span class="selector-class">.1</span></span><br><span class="line"></span><br><span class="line">#### 最高级选择器</span><br><span class="line">* ！<span class="selector-tag">improtant</span></span><br><span class="line">    * 权值高于用户自己设置的</span><br><span class="line">    ```<span class="selector-tag">css</span></span><br><span class="line">    <span class="selector-tag">p</span>&#123;</span><br><span class="line">        <span class="attribute">color</span>:red<span class="meta">!important</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -1289,11 +1285,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">选择器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
+                <a href="javascript:void(0)" class="js-tag color4">div</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1301,19 +1293,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">选择器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">协议</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">div</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">上传图片到博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">设置字体与颜色</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1325,11 +1313,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">表格</a>
+                <a href="javascript:void(0)" class="js-tag color3">cd</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">cd</a>
+                <a href="javascript:void(0)" class="js-tag color3">设置字体与颜色</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">表格</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1337,15 +1329,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">缩略图</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">java数据类型</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">缩略图</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">盒模型</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">上传图片到博客</a>
               </li>
              
               <li class="article-tag-list-item">
